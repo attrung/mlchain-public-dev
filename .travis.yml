@@ -55,5 +55,5 @@ jobs:
 install:
   - python --version
   - pip install -U pip
-  - pip3 install -r requirements.txt
+  - pip3 install -r requirements/core.txt
 script: echo "works" # run tests
