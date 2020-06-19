@@ -9,12 +9,11 @@ python:
   - 3.6
   - 3.7
 before_install:
-  - apt-get install -y --no-install-recommends build-essential gcc nginx libsm6 libxext6 libxrender-dev
+  - sudo apt-get install -y --no-install-recommends build-essential gcc libsm6 libxext6 libxrender-dev
 jobs:
   include:
     # ======= OSX ========
 #     ----- changes in Travis images means this doesn't work for versions before 3.7.5 ---
-     
     - name: "Python 3.7.5 on macOS 10.14"
       os: osx
       osx_image: xcode11.2  # Python 3.7.5 running on macOS 10.14.3
