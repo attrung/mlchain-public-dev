@@ -1,0 +1,22 @@
+image: "python:3.7"
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  only:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /build-new-version/
+  script:
+    - python3.7 setup.py bdist_wheel
+
+
+test:
+  stage: test
+  only:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /build-new-version/
+  script:
+      - echo "Test passed"
