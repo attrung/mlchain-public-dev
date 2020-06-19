@@ -1,4 +1,4 @@
-<!-- <p align="center">
+<p align="center">
   <a href="https://mlchain.ml" target="_blank">
     <img src="https://i.imgur.com/oAMint7l.png" target="_blank" />
   </a><br>
@@ -41,4 +41,4 @@ Workflow is an independent function of MLChain that allows you to process your f
 in a <b> parallel </b> or a <b> pipeline </b> manner. This uses multi thread processing without
 the need of complex DevOps programming, allowing your app to run multiple tasks 20 - 50 times faster than traditional approach.
 
-Learn more about [Workflow](/workflow/general.md) -->
+Learn more about [Workflow](/workflow/general.md)

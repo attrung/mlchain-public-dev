@@ -10,11 +10,11 @@ pages:
     - Overview:
         - 'Introduction': 1_Overview/1_Introduction.md
         - 'Architectures': 1_Overview/2_Architectures.md
+        -  'Supported Environments': 1_Overview/3_Supported_environments.md
 
     - Getting Started:
         -  'Installation': 2_Getting_Started/1_Installation.md
         -  'Deployment': 2_Getting_Started/2_Deployment.md
-        -  'Supported Environments': 2_Getting_Started/3_Supported_environments.md
 
     - Concepts:
         -  'Server': 3_Concepts/1_Server.md
