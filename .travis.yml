@@ -40,5 +40,5 @@ install:
   - python --version
   - pip install -U pip
   - pip install scikit-build
-  - pip3 install -U -r requirements/core.txt --no-binary
+  - pip install -U -r requirements/core.txt --no-binary :all:
 script: echo "works" # run tests
