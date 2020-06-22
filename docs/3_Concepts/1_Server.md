@@ -61,18 +61,20 @@ ML-Chain server function provides 3 main serializer options that allows develope
 how their packages can be sent and received. These includes:
 
 #### Json:
-
-
+Json is arguably the most common and user-friendly data package. It is easy to read json and allows 
+developer to quickly navigate what they need to find. Developers can also directly make changes to json files.
+However, json packages comes with a small cost of needing extra storage and takes longer to send.
 
 #### Message Pack:
 
-
-
+Message Pack (msgpack) is a data package that deliver data similarly to 
+json, but it is lighter and takes less storage. However, they are also more heavy compared to msgpackblosc, and 
+they are not as user friendly as json.
 
 #### Message Pack Blosc:
-
-
-
+Message Pack Blosc (msgpackblosc) is a compacted version of the original message pack. This is similar to that of your ".zip" file,
+which is a lot lighter than the other 2, but takes more computation power as it requires the computer to pack and unpack 
+the data package at both ends. Depending on our systems and use cases, we can simply pick the best serializer for our purposes. 
 
 ## 3. Sever:
 
