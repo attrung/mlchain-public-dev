@@ -6,7 +6,7 @@ repo_url: https://github.com/techainer/mlchain-python
 theme_dir: 'theme_overrides'
 google_analytics: ['UA-90905407-1', 'mlchain.com']
 pages:
-    - Home: 1_Home/1_Home.md
+    - Home: index.md
 
     - Getting Started:
         -  'Installation': 2_Getting_Started/1_Installation.md

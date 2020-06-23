@@ -1,44 +1,77 @@
-<p align="center">
-  <a href="https://mlchain.ml" target="_blank">
-    <img src="https://i.imgur.com/oAMint7l.png" target="_blank" />
-  </a><br>
-  Deploy AI model at scale! <br>
-  <a href="https://mlchain.ml/documentation/python/getting-started/" target="_blank">
-    <strong> Explore the docs » </strong>
-  </a> <br>
-  <a href="https://mlchain.ml" target="_blank"> Our Website </a>
-    ·
-  <a href="https://github.com/techainer/examples-python" target="_blank"> Examples in Python </a>
-</p>
+[![Build Status](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev.svg?branch=master)](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev)
 
-# Mlchain Library for Python
+MLChain is a simple, easy to use library that allows you to deploy your Machine Learning
+model to hosting server easily and efficiently, drastically reducing the time required 
+to build API that support an end-to-end AI product.
 
-[Mlchain](https://mlchain.ml) helps AI developers to easily run, deploy and monitor AI models and Workflows without needing software engineering experience.
+The key features are:
 
-This Mlchain Python library lets you launch models and do many tasks with Mlchain Platform. 
+- <b> Fast: </b> MLChain prioritize speed above other criteria.
 
-[Learn more](/getstarted/core_concepts.md)
+- <b> Fast to code: </b> With a finished Machine Learning model, it takes 4 minutes on average 
+  to deploy a fully functioning API with ML-Chain.
 
-### Seamless AI App Deployment
+- <b> Flexible: </b> The nature of Ml-Chain allows developing end-to-end adaptive, with 
+  varied serializer and framework hosting at your choice.
 
-MLChain support you in building your own web-based AI application, where everything is pre-designed 
-for your comfort. You will be able to test your app without cumbersome software engineering work that takes 
-longer than training the data itself. 
+- <b> Less debugging </b>: We get it. Humans make mistakes. With ML-Chain, its configuration makes 
+  debugging a lot easier and almost unnecessary.
 
-Try our tutorial on [Model Deployment](/Model Deployment/tutorial.md).
+- <b> Easy to code: </b> as a piece of cake!
 
-### Sharing between clients
+- <b> Standards-based: </b> Based on the open standards for APIs: OpenAPI (previously known as Swagger), along with Json Schema and other options.
 
-MLChain Client allows you to also share your AI model's output with regard to developer's specific input. 
-This uses model that is directly hosted by your web-based app, so there is no need for rebuilding or 
-making cumbersome APIs.
+## Requirements:
 
-Try our tutorial on [Client Sharing](/Client/general.md).
+Python 3.6+
 
-### Workflow
+## Installation:
 
-Workflow is an independent function of MLChain that allows you to process your function 
-in a <b> parallel </b> or a <b> pipeline </b> manner. This uses multi thread processing without
-the need of complex DevOps programming, allowing your app to run multiple tasks 20 - 50 times faster than traditional approach.
+```console
+$ pip install fastapi
+```
 
-Learn more about [Workflow](/workflow/general.md)
+## Example:
+
+#### Create it
+
+- Create a <b> main.py </b> file with:
+
+```python
+from mlchain.base import ServeModel
+
+class Model():
+    def __init__(self):
+        self.ans = 10
+
+    def predict(self):
+        return self.ans
+
+# define model
+model = Model()
+
+`# serve model
+serve_model = ServeModel(model)`
+
+# deploy model
+if __name__ == '__main__':
+    from mlchain.rpc.server.flask_server import FlaskServer
+    FlaskServer(serve_model).run(port=5000,threads=12) # run flask model with upto 12 threads
+```
+
+#### Run it
+
+```bash
+python3 main.py
+```
+
+Access your api at http://localhost:5000
+
+## Main Concepts:
+
+- Server: Serving your model as a specific api.
+
+- Client: Retrieve and post message to your model api.
+
+- Workflow: Optimizing and speeding up your machine learning app.
+
