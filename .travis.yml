@@ -8,9 +8,6 @@ arch:
 python:
   - 3.6
   - 3.7
-before_install:
-  - sudo apt-get install -y --no-install-recommends build-essential gcc libsm6 libxext6 libxrender-dev
-  - pip install --upgrade pip setuptools wheel
 jobs:
   include:
     # ======= OSX ========
@@ -42,6 +39,5 @@ jobs:
 install:
   - python --version
   - pip install -U pip
-  - pip install scikit-build
   - pip3 install -U -r requirements/core.txt
 script: echo "works" # run tests

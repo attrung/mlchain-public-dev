@@ -6,11 +6,7 @@ repo_url: https://github.com/techainer/mlchain-python
 theme_dir: 'theme_overrides'
 google_analytics: ['UA-90905407-1', 'mlchain.com']
 pages:
-    - Home: index.md
-    - Overview:
-        - 'Introduction': 1_Overview/1_Introduction.md
-        - 'Architectures': 1_Overview/2_Architectures.md
-        -  'Supported Environments': 1_Overview/3_Supported_environments.md
+    - Home: 1_Home/1_Home.md
 
     - Getting Started:
         -  'Installation': 2_Getting_Started/1_Installation.md
@@ -18,10 +14,10 @@ pages:
 
     - Concepts:
         -  'Server': 3_Concepts/1_Server.md
-        -  'Client': 3_Concepts/2_Client.md
+        -  'Data Retrieval': 3_Concepts/2_Data_Retrieval.md
         -  'Workflows': 3_Concepts/3_Workflow.md
-        -  'Utils': 3_Concepts/4_Utils.md
-        -  'Advantage': 3_Concepts/5_Advantage.md
+#        -  'Utils': 3_Concepts/4_Utils.md
+#        -  'Advantage': 3_Concepts/5_Advantage.md
     
     - Tutorials:
         -  'Main Tutorial': 4_Tutorials/1_Main_Tutorial.md

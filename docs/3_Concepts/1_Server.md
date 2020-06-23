@@ -55,7 +55,11 @@ accompanying function (eg. predict)
 
 - whitelist (list): list of functions that are always used. Use with deny_all_function == True.
 
-## 2. Serializer:
+## 2. Flexible configuration:
+
+
+
+## 3. Serializer:
 
 ML-Chain server function provides 3 main serializer options that allows developers to decide 
 how their packages can be sent and received. These includes:
@@ -75,19 +79,3 @@ they are not as user friendly as json.
 Message Pack Blosc (msgpackblosc) is a compacted version of the original message pack. This is similar to that of your ".zip" file,
 which is a lot lighter than the other 2, but takes more computation power as it requires the computer to pack and unpack 
 the data package at both ends. Depending on our systems and use cases, we can simply pick the best serializer for our purposes. 
-
-## 3. Sever:
-
-#### Flask:
-
-ML-Chain is currently supporting Flask as its main framework to serve and deploy machine learning model. 
-
-
-
-
-## 4. Server Wrapper:
-
-#### Gunicorn Wapper:
-
-ML-Chain is currently using Gunicorn as its main wrapper. This option is compatible with multiple server and operating systems, allowing ML chain to be deployed and used accross multiple devices. It is also stable for scaling to use multiple workers, which
-speeds up application respond time in many AI-based applications.

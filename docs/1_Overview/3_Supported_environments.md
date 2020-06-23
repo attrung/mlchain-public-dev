@@ -1,1 +1,0 @@
-[![Build Status](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev.svg?branch=master)](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev)
