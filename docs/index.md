@@ -1,3 +1,16 @@
+<p align="center">
+  <a href="https://mlchain.ml" target="_blank">
+    <img src="https://i.imgur.com/oAMint7l.png" target="_blank" />
+  </a><br>
+  Deploy AI model at scale! <br>
+  <a href="https://mlchain.ml/documentation/python/getting-started/" target="_blank">
+    <strong> Explore the docs » </strong>
+  </a> <br>
+  <a href="https://mlchain.ml" target="_blank"> Our Website </a>
+    ·
+  <a href="https://github.com/techainer/examples-python" target="_blank"> Examples in Python </a>
+</p>
+
 [![Build Status](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev.svg?branch=master)](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev)
 
 MLChain is a simple, easy to use library that allows you to deploy your Machine Learning
@@ -28,7 +41,7 @@ Python 3.6+
 ## Installation:
 
 ```console
-$ pip install fastapi
+$ pip install mlchain
 ```
 
 ## Example:
