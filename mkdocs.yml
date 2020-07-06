@@ -21,6 +21,7 @@ pages:
     
     - Tutorials:
         -  'Pytorch': 4_Tutorials/1_Pytorch.md
+        -  'Keras': 4_Tutorials/2_Keras.md
     
     - Benchmarks: 5_Benchmarks/1_Test.md
    

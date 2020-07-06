@@ -1,7 +1,7 @@
 # Building a Pytorch API with MLChain
 
 In this tutorial, we will build a Pytorch model on the MNIST dataset and deploy it using ML-Chain. If you are already 
-familiar with Pytorch, you can simply download the Pytorch model <<<<<<<<here>>>>>>>> and skip to section 2 in this tutorial. 
+familiar with Pytorch, you can simply download the Pytorch model <b> [here](https://drive.google.com/file/d/1BT4ZUeYVTMAkxz_XMkJ_9RyL69d26I6m/view?usp=sharing) </b> and skip to section 2 in this tutorial. 
 Otherwise, let's get started. 
 
 ## 1. Building a MNIST classifier using Pytorch
@@ -154,8 +154,9 @@ You should now find a file called "model.pth". This will be used for our main AP
 
 ## 2. Applying ML-Chain
 
-Whether you followed the first step or not, you should now have a <b> model.pth </b> file ready for running.
-In the same folder, create a <b> main.py </b> file and include the following libraries:
+Whether you followed the first step or not, you should now have a <b> model.pth </b> file ready for running. If
+not, please download it here: https://drive.google.com/file/d/1BT4ZUeYVTMAkxz_XMkJ_9RyL69d26I6m/view?usp=sharing.
+In the same folder where you stored the <i> model.pth </i> file, create a <b> main.py </b> file and include the following libraries:
 
 ```python
 import torch
