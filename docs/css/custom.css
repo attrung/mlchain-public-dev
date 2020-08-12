@@ -26,3 +26,8 @@ a.internal-link::after {
 a {
     color: #00bcd4 !important;
 }
+
+.md-header[data-md-state=shadow]{
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2) !important;
+    transition: color 250ms,background-color 250ms,box-shadow 250ms !important;
+}
