@@ -348,6 +348,5 @@ print(model.batch_predict(imgs))
 We get the following as our response:
 
 ```bash
-[mlchain-logger]:[24686] [2020-07-06 18:48:28 +0700]-[INFO]-[base.py:194]-MLCHAIN VERSION: 0.0.2 API VERSION: 1.0.0
 ['T-shirt/top', 'T-shirt/top', 'Dress']
 ```

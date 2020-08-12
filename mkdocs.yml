@@ -7,6 +7,7 @@ theme_dir: 'theme_overrides'
 google_analytics: ['UA-90905407-1', 'mlchain.com']
 pages:
     - Home: index.md
+    - Features: 1_Features/1_features.md
 
     - Getting Started:
         -  'Installation': 2_Getting_Started/1_Installation.md
@@ -97,9 +98,19 @@ markdown_extensions:
     - pymdownx.tilde
     - markdown_include.include:
         base_path: docs
+
 extra_css:
+    - css/termynal.css
+    - css/custom.css
     - css/bootstrap_paper.min.css
     - css/style.css
+extra_javascript:
+    - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+    - js/termynal.js
+    - js/custom.js
+    - js/chat.js
+    - https://sidecar.gitter.im/dist/sidecar.v1.js
+
 copyright: Copyright &copy; 2018 FloydHub
 
 # We were having some favicon issues, likely in our theme's code. This is a

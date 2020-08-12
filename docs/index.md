@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://mlchain.ml" target="_blank">
-    <img src="https://i.imgur.com/oAMint7l.png" target="_blank" />
+    <img src="img/logo.png" target="_blank" height="80"/>
   </a><br>
-  Deploy AI model at scale! <br>
+  <i> Auto-Magical Deploy AI model at large scale, high performance, and easy to use </i> <br>
   <a href="https://mlchain.ml/documentation/python/getting-started/" target="_blank">
     <strong> Explore the docs » </strong>
   </a> <br>
@@ -12,6 +12,7 @@
 </p>
 
 [![Build Status](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev.svg?branch=master)](https://travis-ci.com/Nguyen-ATrung/mlchain-public-dev)
+
 
 MLChain is a simple, easy to use library that allows you to deploy your Machine Learning
 model to hosting server easily and efficiently, drastically reducing the time required 
@@ -40,9 +41,14 @@ Python 3.6+
 
 ## Installation:
 
+<div class="termy">
+
 ```console
 $ pip install mlchain
+
+---> 100%
 ```
+</div>
 
 ## Example:
 
