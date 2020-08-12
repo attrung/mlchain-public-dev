@@ -7,6 +7,7 @@ theme_dir: 'theme_overrides'
 google_analytics: ['UA-90905407-1', 'mlchain.com']
 pages:
     - Home: index.md
+    - Deploy Your Model in 1 minute: 0_Quick_Deploy/quick_deploy.md
     - Features: 1_Features/1_features.md
 
     - Getting Started:
@@ -87,7 +88,7 @@ markdown_extensions:
     - pymdownx.betterem(smart_enable=all)
     - pymdownx.caret
     - pymdownx.critic
-      # - pymdownx.emoji:
+      # - pymdownx.emoji: local changes to the following files would be overwritten by m
         # emoji_generator: !!python/name:pymdownx.emoji.to_svg
     - pymdownx.inlinehilite
     - pymdownx.magiclink
