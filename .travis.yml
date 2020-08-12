@@ -2,6 +2,7 @@ language: python
 os: linux
 arch:
   - amd64
+  - x86_64
  # - ppc64le
  # - s390x
  # - arm64
@@ -35,9 +36,15 @@ jobs:
         - choco install python --version 3.7.4
         - python -m pip install --upgrade pip
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
+before_install:
+  - apt update
+  - apt install -y software-properties-common
+  - apt update
+  - apt-get install -y --no-install-recommends build-essential gcc
 
 install:
   - python --version
-  - pip install -U pip
-  - pip3 install -U -r requirements/core.txt
+#   - pip install -U pip
+#   - pip3 install -U -r requirements/core.txt
+  - python setup.py install
 script: echo "works" # run tests
