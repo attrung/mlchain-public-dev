@@ -66,8 +66,8 @@ extra:
     - Get Started
     - CLI Commands
   palette:
-    primary: 'blue'
-    accent: 'blue'
+    primary: 'cyan'
+    accent: 'cyan'
     extra:
   logo: 'img/logo_white.png'
   font:
@@ -116,4 +116,4 @@ copyright: Copyright &copy; 2020 Techainer
 # We were having some favicon issues, likely in our theme's code. This is a
 # config setting offered by our theme that fixes the issue
 # https://github.com/squidfunk/mkdocs-material/pull/319
-site_favicon: 'img/favicon.ico'
+site_favicon: 'img/logo_short.png'
