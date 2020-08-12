@@ -22,3 +22,7 @@ a.internal-link::after {
     width: 50px;
     margin-top: -5px;
 }
+
+a {
+    color: #00bcd4 !important;
+}
