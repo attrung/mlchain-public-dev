@@ -41,7 +41,7 @@ before_install:
   - sudo apt-get install -y software-properties-common
   - sudo apt-get update
   - sudo apt-get install -y --no-install-recommends build-essential gcc
-
+  - pip install scikit-build
 install:
   - python --version
 #   - pip install -U pip
