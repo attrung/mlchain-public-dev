@@ -2,7 +2,7 @@ site_name: MLChain Documentation
 site_url: https://docs.mlchain.com
 site_author: Techainer Team
 site_description: MLChain is a zero setup Deep Learning platform for productive data science teams.
-repo_url: https://github.com/techainer/mlchain-python
+# repo_url: https://github.com/techainer/mlchain-python
 theme_dir: 'theme_overrides'
 google_analytics: ['UA-90905407-1', 'mlchain.com']
 pages:
@@ -69,15 +69,15 @@ extra:
     primary: 'blue'
     accent: 'blue'
     extra:
-  logo: 'img/f_white_rect_small.png'
+  logo: 'img/logo_white.png'
   font:
     text: 'Roboto'
     code: 'Source Code Pro'
   social:
-    - type: 'github'
-      link: 'https://github.com/floydhub'
-    - type: 'twitter'
-      link: 'https://twitter.com/floydhub_'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/techainer/'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/techainer'
 markdown_extensions:
     - admonition
     - codehilite
@@ -108,10 +108,10 @@ extra_javascript:
     - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
     - js/termynal.js
     - js/custom.js
-    - js/chat.js
-    - https://sidecar.gitter.im/dist/sidecar.v1.js
+    # - js/chat.js
+    # - https://sidecar.gitter.im/dist/sidecar.v1.js
 
-copyright: Copyright &copy; 2018 FloydHub
+copyright: Copyright &copy; 2020 Techainer
 
 # We were having some favicon issues, likely in our theme's code. This is a
 # config setting offered by our theme that fixes the issue

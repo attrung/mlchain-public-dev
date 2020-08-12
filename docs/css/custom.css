@@ -16,3 +16,9 @@ a.internal-link::after {
 .md-footer-meta {
     padding-bottom: 2em;
 }
+
+.md-header-nav__button.md-logo img{
+    height: 35px;
+    width: 50px;
+    margin-top: -5px;
+}
